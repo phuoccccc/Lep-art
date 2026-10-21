@@ -1,0 +1,197 @@
+
+/* AN'S WORLD - PERSONAL WEBSITE */
+
+:root {
+  --blue: #6699cc;
+  --dark: #26354d;
+  --light: #f4f9ff;
+  --cream: #fffdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #e8edf4;
+}
+
+header h2 {
+  margin: 0;
+  color: var(--blue);
+  font-size: 25px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--blue);
+}
+
+/* PAGE SECTIONS */
+
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 25px;
+}
+
+section {
+  padding: 65px 55px;
+  margin-bottom: 28px;
+  border-radius: 25px;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+/* HOME */
+
+#home {
+  min-height: 430px;
+  background: linear-gradient(
+    135deg,
+    #dcefff,
+    #f3eaff,
+    #fff5ec
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#home h1 {
+  font-size: clamp(40px, 6vw, 70px);
+  line-height: 1.2;
+  margin: 0 0 15px;
+}
+
+#home p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* ABOUT */
+
+#about {
+  background: white;
+  box-shadow: 0 8px 30px #243a5410;
+}
+
+/* MOCHI GALLERY */
+
+#gallery {
+  background: white;
+}
+
+.gallery {
+  min-height: 250px;
+  padding: 25px;
+  border: 2px dashed #bdd8ee;
+  border-radius: 18px;
+  background: var(--light);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #8195ad;
+}
+
+/* CONTACT */
+
+#contact {
+  background: #eaf4ff;
+  text-align: center;
+}
+
+#contact a {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  background: #487faf;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  background: var(--dark);
+  color: white;
+  padding: 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px 18px;
+    font-size: 13px;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  section {
+    padding: 45px 25px;
+    border-radius: 18px;
+  }
+
+  #home {
+    min-height: 350px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+}
